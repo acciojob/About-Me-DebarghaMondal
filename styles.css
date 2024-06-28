@@ -20,6 +20,9 @@ header {
     text-align: center;
     padding: 10px 0;
 }
+.about-me{
+	color:red;
+}
 
 header h1 {
     margin: 0;
