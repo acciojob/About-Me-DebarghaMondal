@@ -1,71 +1,38 @@
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+*{
     margin: 0;
     padding: 0;
 }
 
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+
+.flex{
+    display: flex;
 }
-
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+.container{
+    display: flex;
 }
-
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+.rightbox{
+    width: 50%;
 }
-
-header p {
-    margin: 0;
-    font-size: 1.2rem;
+.leftbox{
+    width: 50%;
 }
-
-section {
-    margin: 20px 0;
+.p{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
 }
-
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-}
-
 .skill {
-    margin-bottom:1 0px;
-}
-
-.skill-bar {
-    background-color: #f0f0f0;
-    height: 20px;
-    border-radius: 10px;
-    margin-top: 5px;
-}
-
-.skill-level {
-    height: 100%;
-    background-color: #4caf50;
-    border-radius: 10px;
-}
-
-footer {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
     width: 100%;
-}
+    background-color: #ddd;
+  }
+  .skills {
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    font-size: 2px;
+  }
+  .react {width: 95%; background-color: #0C78FF;}
+  .node {width: 90%; background-color: #0C78FF;}
+  .python {width: 99%; background-color: #0C78FF;}
+  .aws {width: 93%; background-color: #0C78FF;}
