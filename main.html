@@ -1,74 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Personal Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f6f6f6;
+            font-family: Arial, sans-serif;
+        }
+        .profile-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f6f6f6;
+        }
+        .profile-card {
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        .left-section {
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .left-section img {
+            border-radius: 10px;
+            width: 150px;
+            height: 150px;
+        }
+        .right-section {
+            flex: 1;
+        }
+        .right-section h2 {
+            border-bottom: 2px solid #1877f2;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .right-section p {
+            margin: 10px 0;
+        }
+        .skills {
+            display: flex;
+            flex-direction: column;
+        }
+        .skill {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .skill img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .progress {
+            flex: 1;
+            height: 20px;
+            margin-left: 10px;
+        }
+    </style>
 </head>
-
 <body>
-    <div class="container">
-        <section class="leftbox">
-            <div class="flex">
-                <div class="img">
-                    <img width="100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdSGVuStFxj_Dnv9V9qlzkor22IRPIglGkVA&s" alt="">
-                </div>
-                <div class="info">
-                    <p><b>Name:</b>Debargha Mondal</p>
-                    <p><b>Profile:</b>Software Developer</p>
-                    <p><b>Email:</b>debargha@gmail.com</p>
-                </div>
-
+    <div class="profile-container">
+        <div class="profile-card">
+            <div class="left-section">
+                <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.png" alt="Profile Picture">
+                <h3>Name</h3>
+                <p>Shubham Bhola</p>
+                <h3>Profile</h3>
+                <p>Software Developer</p>
+                <h3>Email</h3>
+                <p>abcdef796@gmail.com</p>
             </div>
-            <div id="skills">
+            <div class="right-section">
+                <h2>About me</h2>
+                <p>
+                    I am a Self-starter with a passion to adapt and evangelise new technologies.
+                    I have a passion for software development with a diverse skillset ranging from the
+                    MERN stack to a stronghold on data structures and algorithms. I like to tackle complex
+                    challenges head-on to deliver technically sound solutions with optimum efficiency.
+                </p>
+                <p>
+                    I believe that magic is possible with a blend of imagination, hard-work and passion.
+                    Most of all, I believe in determination and honest efforts to enhance my skills in order
+                    to contribute to the growth of society.
+                </p>
                 <h2>Skills</h2>
-                <div class="p">
-                <p>REACT, CSS, JAVASCRIPT</p>
-                <p>95%</p>
-            </div>
-                <div class="skill">
-                    <div class="skills react"></div>
-                </div>
-                <div class="p">
-                    <p>NODEJS, MONGODB</p>
-                    <p>90%</p>
-                </div>
+                <div class="skills">
                     <div class="skill">
-                        <div class="skills node"></div>
-                    </div>
-                    <div class="p">
-                        <p>C/C++, PYTHON, BATCH</p>
-                        <p>99%</p>
-                    </div>
-                        <div class="skill">
-                            <div class="skills python"></div>
+                        <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React">
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
                         </div>
-                        <div class="p">
-                            <p>AWS, HADOOP</p>
-                            <p>93%</p>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS">
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
                         </div>
-                            <div class="skill">
-                                <div class="skills aws"></div>
-                            </div>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript">
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="NodeJS">
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="MongoDB">
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" alt="C++">
+                        <div class="progress">
+                            <div class="progress-bar bg-secondary" role="progressbar" style="width: 99%;" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100">99%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python">
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 99%;" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100">99%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="AWS">
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 93%;" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100">93%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/48/000000/hadoop-distributed-file-system.png" alt="Hadoop">
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 93%;" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100">93%</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section class="rightbox" id="About-Me">
-    <h2>About Me</h2>
-    <p>
-		I am a Self-starter with passion to adapt and evangelise new technologies. I have a passion for software
-        development with a diverse skillset ranging from the MERN Stack to a stronghold on data structures and
-        algorithms. I like to tackle complex challenges head-on to deliver technically sound solution with
-        optimum efficiency.
-	</p>
-			<p>
-        I believe that magic is possible with a blend of imagination, hard-work and passion. Most of all, I
-        believe in determination and honest efforts to enhance my skills in order to contribute to the growth of
-        society.
-			</p>
-</section>
+        </div>
     </div>
 </body>
-
 </html>
